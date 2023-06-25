@@ -1,0 +1,131 @@
+@media only screen and (max-width: 739px) {
+  #picture .my_photo {
+    display: none;
+  }
+  /* nav-bar */
+  #nav-bar .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+  }
+  #nav-bar .container > a,
+  #nav-bar .container > a:nth-child(2),
+  #nav-bar .container > a:nth-child(5) {
+    padding: 15px 20px;
+    border-left: none;
+    border-right: none;
+  }
+  #nav-bar .container .white_space {
+    display: none;
+  }
+
+  /* Introduction */
+  #about .container {
+    display: block;
+    margin: 0;
+  }
+
+  /* Experiences */
+  #job-info .container {
+    margin: 0;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+  }
+  .career {
+    width: 350px;
+  }
+
+  /* Certificate */
+  #certificate .container {
+    padding: 0;
+    margin: 0;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+  }
+  #certificate .container > h1 {
+    text-align: center;
+  }
+  .cert2 {
+    border-left: none;
+    padding: 0;
+  }
+  .cert3 {
+    border-top: none;
+    padding: 0;
+  }
+  #certificate .container .cert1,
+  #certificate .container .cert2,
+  #certificate .container .cert3 {
+    padding: 0% 7%;
+    margin: 0% 20%;
+  }
+  #certificate .container .cert2,
+  #certificate .container .cert3 {
+    padding-top: 5%;
+    border-top: 2px solid #d6c08d;
+  }
+
+  /* Dự án */
+  #project .container {
+    display: contents;
+    width: fit-content;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+  }
+  #project .container > h1 {
+    text-align: center;
+  }
+  .box_prj,
+  .extra {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+  }
+  .extra {
+    width: 100%;
+  }
+  #project .container .box_prj .prj > .img {
+    width: 330px;
+    height: 250px;
+  }
+
+  /* Contact */
+  #footer .container {
+    max-width: 420px;
+  }
+  #footer .container ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Link to project charter */
+  .flex-timeline {
+    display: block;
+  }
+  .time-line-start,
+  .time-line-process {
+    margin-left: 15px;
+  }
+  .start > .content,
+  .date > .content {
+    margin: 10px;
+  }
+  .start,
+  .date {
+    margin-top: 50px;
+  }
+}

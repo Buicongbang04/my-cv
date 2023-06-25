@@ -1,0 +1,476 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 30px 50px;
+}
+
+/* Banner */
+#banner img {
+  position: relative;
+  object-fit: cover;
+  object-position: top;
+  filter: brightness(50%);
+}
+.name {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.name > span {
+  position: absolute;
+  left: 25%;
+  font-size: 12px;
+}
+/* My picture is here */
+#picture .my_photo img {
+  position: absolute;
+  border: 10px solid rgb(243, 242, 242);
+  border-radius: 50%;
+  top: 40%;
+  left: 43.2%;
+}
+/* Navbar */
+#nav-bar .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px;
+  align-items: center;
+  justify-items: center;
+  padding: 0;
+}
+#nav-bar .container > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 15px 0px 15px 60px;
+  border-left: 2px solid rgb(228, 228, 228);
+}
+#nav-bar .container > a:nth-child(2) {
+  border-right: 2px solid rgb(228, 228, 228);
+}
+#nav-bar .container > a:nth-child(5) {
+  border-right: 2px solid rgb(228, 228, 228);
+}
+i {
+  color: rgb(49, 120, 243);
+}
+
+#nav-bar a:hover {
+  background: rgba(221, 221, 231, 0.859);
+}
+
+/* xây dựng thông tin cá nhân */
+#about .container {
+  padding: 0;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.section-title {
+  margin-bottom: 30px;
+  padding-top: 40px;
+  text-align: center;
+}
+#target {
+  padding: 40px 30px;
+}
+#target p {
+  font-size: 14px;
+  color: rgb(76, 76, 76);
+}
+#personal-info {
+  padding: 40px 40px 0 40px;
+}
+.mt-40 {
+  line-height: 35px;
+  padding: 0;
+  color: rgb(76, 76, 76);
+}
+.mt-40 li {
+  text-decoration: none;
+  list-style: none;
+}
+#target:hover,
+#personal-info:hover {
+  background: rgb(224, 224, 224);
+}
+
+/* Xây dựng thông tin nghề nghiệp */
+#job-info .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+  column-gap: 40px;
+  row-gap: 30px;
+}
+#job-info .container .career {
+  border: 3px solid rgb(228, 228, 228);
+  color: rgb(76, 76, 76);
+  padding: 20px;
+  height: fit-content;
+}
+/* Xây dựng nội dung content bên trong bằng Flex-box */
+.title {
+  display: flex;
+  align-items: start;
+  flex: 1 1 auto;
+  padding-bottom: 30px;
+}
+.title i {
+  font-size: 250%;
+  color: rgb(46, 45, 45);
+  width: 25%;
+}
+.title h1 {
+  width: 75%;
+  padding-top: 15px;
+}
+.section-content p {
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+
+.hobbies {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hobbies div i {
+  font-size: 25px;
+  color: rgb(182, 178, 178);
+  padding: 8px;
+
+  border: 2px solid green;
+  border-radius: 50%;
+  text-align: center;
+}
+.hobbies div p {
+  margin-top: 20px;
+}
+
+/* Làm thành đánh giá */
+.lang1 div,
+.lang2 div,
+.box div {
+  display: flex;
+  justify-content: space-between;
+}
+.rate {
+  width: 70px;
+  border: 3px solid grey;
+}
+.box {
+  margin-top: 30px;
+}
+.box:first-child {
+  margin-top: 0;
+}
+.n1 {
+  border-color: rgb(49, 120, 243);
+}
+.lang1 .n2,
+.java .n2,
+.python .n2,
+.c .n2 {
+  border-color: rgb(49, 120, 243);
+}
+.c .n3 {
+  border-color: rgb(49, 120, 243);
+}
+/* Chứng chỉ */
+#certificate .container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#certificate .container h1 {
+  grid-column: 1/3;
+  text-align: left;
+}
+.cert1 {
+  grid-column: 1/2;
+  margin-bottom: 50px;
+}
+.cert2 {
+  grid-column: 2/3;
+  margin-bottom: 50px;
+  padding-left: 15px;
+  border-left: 1.5px solid #d6c08d;
+}
+.cert3 {
+  padding-top: 50px;
+  border-top: 1.5px solid #d6c08d;
+  grid-column: 1/3;
+}
+.cert1 img,
+.cert2 img,
+.cert3 img {
+  float: left;
+}
+
+.cert1 p,
+.cert2 p,
+.cert3 p {
+  float: left;
+  font-size: 13px;
+  margin-left: 30px;
+}
+/* Dự án */
+.box_prj {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  column-gap: 30px;
+}
+#project .container .prj {
+  border: 2px solid rgb(228, 228, 228);
+  height: fit-content;
+}
+.prj_name,
+.describe,
+.task {
+  padding: 20px;
+  border-bottom: 2px solid rgb(228, 228, 228);
+}
+.extra {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-bottom: 2px solid rgb(228, 228, 228);
+}
+.year {
+  width: 50px;
+  border-radius: 25px;
+  background: #2c79ff;
+  text-align: center;
+  color: #f7f7f7;
+}
+#project .container .prj i {
+  color: rgb(182, 178, 178);
+}
+.describe,
+.task,
+.technique {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  font-size: 14px;
+}
+#project .container .box_prj .prj > .img {
+  width: 300px;
+  height: 220px;
+}
+.technique {
+  padding: 20px;
+}
+/* Footer */
+
+#footer .container li {
+  list-style: none;
+}
+#footer .container ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  height: auto;
+}
+#footer .container ul li > a {
+  text-decoration: none;
+  color: rgb(133, 129, 129);
+}
+
+#footer .container ul a i {
+  font-size: 250%;
+  color: #548ef3;
+}
+#footer .container ul a {
+  display: flex;
+}
+#footer .container ul a span {
+  padding-top: 15%;
+}
+
+/* Ẩn thông tin cá nhân */
+.hidden {
+  display: none;
+}
+.showcase-form .form-control {
+  margin: 30px 0 10px 0;
+}
+
+.showcase-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+.submit {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px;
+  margin: 10px;
+  border: none;
+  background-color: rgb(21, 101, 229);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hiệu ứng ẩn thong tin nghề nghiệp*/
+
+.myBtn,
+.more {
+  display: none;
+}
+.myBtn {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px;
+  margin: 20px;
+  border: none;
+  color: rgb(123, 121, 121);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.career:hover > .myBtn {
+  display: contents;
+}
+
+/* Charter */
+.card {
+  background-color: white;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+/* All charter */
+.all-charter {
+  background-color: #2c79ff;
+  overflow: auto;
+  padding: 15px;
+  line-height: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.all-charter > .goals,
+.all-charter > .scopes {
+  grid-column: 1/3;
+}
+.all-charter > .teams {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.all-charter > .time-line {
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+.flex,
+.flex-timeline {
+  display: flex;
+}
+h2 {
+  border-bottom: 2px solid #b4becb;
+}
+.charter-container .first-goal > i,
+.charter-container .second-goal > i,
+.charter-container .third-goal > i,
+.charter-container .member > i,
+.charter-container .primary-key > i {
+  color: #333;
+  margin-right: 30px;
+  margin-top: 10px;
+  align-items: center;
+  font-size: 25px;
+}
+.charter-container > h2 {
+  color: #2c79ff;
+  padding-bottom: 10px;
+}
+/* Goals */
+.first-goal,
+.second-goal,
+.third-goal {
+  border-bottom: 2px solid #e5eded;
+}
+
+/* Scopes */
+.in,
+.out {
+  margin: 10px 20px;
+}
+.in > p,
+.out > p {
+  margin: 20px 0;
+}
+
+/* Teams */
+.member {
+  margin: 20px;
+}
+
+/* Primary */
+.primary-key {
+  margin-bottom: 30px;
+}
+
+/* Timeline */
+.start > span,
+.date > span {
+  border: 2px solid rgb(161, 159, 159);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(184, 122, 238);
+  color: white;
+}
+.start,
+.date {
+  margin-top: 20px;
+}
+.start > div,
+.date > div {
+  border-bottom: 3px dotted rgb(55, 188, 218);
+  margin-left: 20px;
+}
+
+/* Link to digital-cv */
+#project .container .box_prj .prj > a {
+  color: white;
+  background-color: #3087d9;
+  text-decoration: none;
+  display: none;
+}
+#project .container .box_prj .prj a > i {
+  color: white;
+  padding-left: 10px;
+}
+#project .container .box_prj .prj:hover > a {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}

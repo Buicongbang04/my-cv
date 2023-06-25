@@ -1,0 +1,118 @@
+@media only screen and (max-width: 1023px) {
+  #picture .my_photo > img {
+    display: none;
+  }
+
+  /* nav-bar */
+  #nav-bar .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 20px 1fr 1fr;
+    grid-template-rows: 50px;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    max-width: 700px;
+  }
+  #nav-bar .container > a {
+    padding: 15px 20px;
+  }
+
+  /* Experiences */
+  #job-info .container {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 451px 137px 340px 150px; */
+    row-gap: 0;
+  }
+  /* #job-info .container .career:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }
+  #job-info .container .career:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #job-info .container .career:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 4/6;
+  }
+  #job-info .container .career:nth-child(5) {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  #job-info .container .career:last-child {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  } */
+
+  #job-info .container .career {
+    height: fit-content;
+    border-block-end-width: 3px solid rgb(228, 228, 228);
+    color: rgb(76, 76, 76);
+    padding: 20px;
+  }
+
+  /* Certificate */
+  #certificate .container {
+    max-width: 800px;
+  }
+  #certificate .container .cert1,
+  #certificate .container .cert2,
+  #certificate .container .cert3 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .cert1 p,
+  .cert2 p,
+  .cert3 p {
+    font-size: 13px;
+    margin-left: 0px;
+  }
+
+  /* dự án */
+  #project .container {
+    max-width: 880px;
+  }
+  #project .container .box_prj .prj > .img {
+    width: 200px;
+    height: 120px;
+  }
+  .extra {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-bottom: 2px solid rgb(228, 228, 228);
+  }
+  .extra .n3 {
+    grid-column: 2/3;
+  }
+
+  /* Footer */
+  #footer .container {
+    max-width: 800px;
+  }
+  #footer .container ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Link to project charter */
+  .all-charter,
+  .flex {
+    display: block;
+  }
+  .charter-container .first-goal > i,
+  .charter-container .second-goal > i,
+  .charter-container .third-goal > i,
+  .charter-container .member > i,
+  .charter-container .primary-key > i {
+    display: flex;
+    justify-content: center;
+  }
+}
