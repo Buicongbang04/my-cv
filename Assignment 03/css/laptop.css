@@ -58,6 +58,7 @@ section > .container {
   width: 100%;
   padding: 15px 0px 15px 60px;
   border-left: 2px solid rgb(228, 228, 228);
+  color: rgb(140, 138, 138);
 }
 #nav-bar .container > a:nth-child(2) {
   border-right: 2px solid rgb(228, 228, 228);
