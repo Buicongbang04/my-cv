@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 991px) {
   #picture .my_photo > img {
     display: none;
   }
@@ -11,7 +11,7 @@
     align-items: center;
     justify-items: center;
     padding: 0;
-    max-width: 700px;
+    max-width: 100%;
   }
   #nav-bar .container > a {
     padding: 15px 20px;
@@ -19,7 +19,7 @@
 
   /* Experiences */
   #job-info .container {
-    max-width: 800px;
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-rows: 451px 137px 340px 150px; */
@@ -55,7 +55,7 @@
 
   /* Certificate */
   #certificate .container {
-    max-width: 800px;
+    max-width: 100%;
   }
   #certificate .container .cert1,
   #certificate .container .cert2,
@@ -72,7 +72,7 @@
 
   /* dự án */
   #project .container {
-    max-width: 880px;
+    max-width: 100%;
   }
   #project .container .box_prj .prj > .img {
     width: 200px;
@@ -91,7 +91,7 @@
 
   /* Footer */
   #footer .container {
-    max-width: 800px;
+    max-width: 100%;
   }
   #footer .container ul {
     display: flex;
