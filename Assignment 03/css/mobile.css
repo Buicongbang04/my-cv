@@ -1,4 +1,4 @@
-@media only screen and (max-width: 739px) {
+@media only screen and (max-width: 767px) {
   #picture .my_photo {
     display: none;
   }
@@ -31,10 +31,11 @@
   /* Experiences */
   #job-info .container {
     margin: 0;
-    display: inherit;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 400px;
+    max-width: 100%;
   }
   .career {
     width: 350px;
@@ -44,10 +45,11 @@
   #certificate .container {
     padding: 0;
     margin: 0;
-    display: inherit;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 500px;
+    max-width: 100%;
   }
   #certificate .container > h1 {
     text-align: center;
@@ -79,7 +81,7 @@
     display: inherit;
     align-items: center;
     justify-content: center;
-    max-width: 400px;
+    max-width: 60%;
   }
   #project .container > h1 {
     text-align: center;
@@ -101,7 +103,7 @@
 
   /* Contact */
   #footer .container {
-    max-width: 420px;
+    max-width: 100%;
   }
   #footer .container ul {
     display: flex;
