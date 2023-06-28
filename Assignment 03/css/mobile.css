@@ -87,8 +87,7 @@
   #project .container > h1 {
     text-align: center;
   }
-  .box_prj,
-  .extra {
+  .box_prj {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -96,10 +95,13 @@
   }
   .extra {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   #project .container .box_prj .prj > .img {
-    width: 330px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
   }
 
   /* Contact */
