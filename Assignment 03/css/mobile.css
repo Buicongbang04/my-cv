@@ -78,11 +78,10 @@
   #project .container {
     display: contents;
     width: fit-content;
-    display:flex;
-    flex-direction: column;
+    display: inherit;
     align-items: center;
     justify-content: center;
-    max-width: 60%;
+    max-width: 100%;
   }
   #project .container > h1 {
     text-align: center;
@@ -93,6 +92,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 20px;
   }
+
   .extra {
     width: 100%;
     display: flex;
@@ -115,6 +115,9 @@
     gap: 20px;
     width: 100%;
     height: auto;
+  }
+  #footer .container ul li a > span {
+    display: none;
   }
 
   /* Link to project charter */
